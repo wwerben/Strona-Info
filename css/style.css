@@ -644,11 +644,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1512,20 +1507,18 @@ video {
 }
 
 .animate-scroll {
-  animation: scroll 30s linear infinite;
+  animation: scroll 45s linear infinite;
 }
 
 @media (max-width: 768px) {
   .animate-scroll {
     animation-duration: 20s;
-    /* Faster animation for mobile */
   }
 }
 
 @media (max-width: 480px) {
   .animate-scroll {
     animation-duration: 15s;
-    /* Even faster animation for smaller screens */
   }
 }
 
@@ -2074,6 +2067,11 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .lg\:mb-3 {
     margin-bottom: 0.75rem;
   }

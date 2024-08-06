@@ -16,18 +16,18 @@
     }
   
     .animate-scroll {
-      animation: scroll 30s linear infinite;
+      animation: scroll 45s linear infinite;
     }
   
     @media (max-width: 768px) {
       .animate-scroll {
-        animation-duration: 20s; /* Faster animation for mobile */
+        animation-duration: 20s;
       }
     }
   
     @media (max-width: 480px) {
       .animate-scroll {
-        animation-duration: 15s; /* Even faster animation for smaller screens */
+        animation-duration: 15s; 
       }
     }
   }
