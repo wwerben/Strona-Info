@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           clearInterval(interval);
         }
-      }, 52); 
+      }, 92); 
     };
 
 
