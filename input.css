@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer utilities {
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    .animate-scroll {
+      animation: scroll 40s linear infinite;
+    }
+  }
+
+@layer components {
+    .underline-animation::before {
+      @apply absolute bottom-0 left-0 w-0 h-0.5 rounded-md bg-white transition-all duration-300 ease-out;
+      content: "";
+    }
+    
+    .underline-animation:hover::before {
+      @apply w-full;
+    }
+    
+  }
+
+.card11{
+    @apply lg:h-96 lg:w-60 hover:text-white hover:bg-blue5 h-60 w-40 shadow-lg bg-white flex-col rounded-lg flex items-center justify-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 delay-100 flex-none
+  }
+.card12{
+    @apply lg:w-20 lg:h-20 w-12 h-12 lg:mb-0 -mb-2
+}
+.card13{
+    @apply font-bold lg:text-2xl text-lg text-center 
+}
+.card14{
+    @apply font-medium font-poppins lg:text-base text-sm text-center tracking-tighter lg:my-4 my-1
+}
+
+.menuprzycisk{
+    @apply text-gray-200 hover:text-white rounded-md font-medium relative underline-animation
+}
+
+.krok1{
+  @apply text-gray-200 border-2 break-normal rounded-full px-3 w-[75px] text-center z-10 py-1 bg-gray-600  whitespace-nowrap
+}
+
+.karuzela{
+  @apply w-full xl:h-128 md:h-110 sm:h-110 h-111 object-cover object-center overflow-hidden transition duration-1000 ease-in-out 
+}
+
+.animacja{
+  @apply opacity-0 transform translate-y-10 transition-all duration-1000
+}
+
+.arrowdown{
+  @apply absolute lg:flex items-center inset-x-0 bottom-28 animate-bounce animate-infinite animate-duration-[1000ms]  justify-center z-20 cursor-pointer hidden
+}
+
+.card1a{
+  @apply md:w-60 w-40 md:h-72 h-60 bg-white relative shadow-2xl rounded-xl hover:scale-105 hover:animate-ease-linear hover:duration-300 animate-ease-out duration-300
+}
+
+.card1b{
+  @apply text-left px-3 py-3 font-normal flex items-center font-poppins lg:text-xl md:text-lg text-base z-10 whitespace-pre-line select-none
+}
+
+.card1button{
+  @apply text-white bg-blue-800 hover:bg-blue-900 font-medium rounded-md text-xs px-4 py-2.5 mr-2 mb-2 
+}
