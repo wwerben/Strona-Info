@@ -679,6 +679,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.mx-64 {
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
+
 .-mb-\[60px\] {
   margin-bottom: -60px;
 }
@@ -2070,6 +2075,11 @@ video {
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .lg\:mx-64 {
+    margin-left: 16rem;
+    margin-right: 16rem;
   }
 
   .lg\:mb-3 {
